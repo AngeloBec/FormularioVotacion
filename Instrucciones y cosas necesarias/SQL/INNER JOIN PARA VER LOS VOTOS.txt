@@ -1,0 +1,8 @@
+hola, le comparto la consulta para revisar los votos realizados :D.
+
+
+SELECT v.id, v.nombre_completo, v.alias, v.rut, v.email, r.nombre AS region, c.nombre AS comuna, ca.nombre AS candidato
+FROM votos v
+INNER JOIN regiones r ON v.regiones_id = r.id
+INNER JOIN comunas c ON v.comunas_id = c.id
+INNER JOIN candidatos ca ON v.candidato = ca.id;
