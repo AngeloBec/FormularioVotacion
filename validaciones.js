@@ -31,15 +31,28 @@ formulario.addEventListener('submit', (event) => {
     error.classList.add('alert', 'alert-danger');
     error.innerHTML = 'Debe ingresar un alias válido (más de 5 caracteres y que contenga letras y números).';
     formulario.insertBefore(error, formulario.querySelector('button[type="submit"]'));
+  } else {
+    
+    const rutValue = document.querySelector('input[name="rut"]').value.trim();
+    $.ajax({
+      url: 'validar_dup_rut.php',
+      type: 'POST',
+      data: { rut: rutValue },
+      success: function(response) {
+        if (response === 'duplicado') {
+          const error = document.createElement('div');
+          error.classList.add('alert', 'alert-danger');
+          error.innerHTML = 'El RUT ingresado ya ha votado anteriormente.';
+          formulario.insertBefore(error, formulario.querySelector('button[type="submit"]'));
+        } else {
+          formulario.submit();
+          alert("Su voto se ha realizado con éxito.");
+        }
+      }
+    });
   }
-  
-  else {
-    formulario.submit();
-    alert("Su voto se ha realizado con éxito.");
-
-  }
-  
 });
+
 
 function validarRutChileno(rut) {
   // Elimina cualquier guión o punto del RUT
