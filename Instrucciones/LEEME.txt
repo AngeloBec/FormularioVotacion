@@ -31,6 +31,6 @@ crea una base de datos nueva llamada "votacion_db .sql" sin las comillas luego d
 
 5. Abre el proyecto en tu navegador web:
 
-Abre tu navegador web y escribe la URL http://localhost/FormularioDeVotacion/index.html en la barra de direcciones.
+Abre tu navegador web y escribe la URL http://localhost/FormularioVotacion-master/index.html en la barra de direcciones.
 
 Si todo está configurado correctamente, deberías ver el proyecto cargado en tu navegador web y listo para que realizes las pruebas necesarias :D .
