@@ -16,7 +16,7 @@ y seguir las instrucciones para instalarlo en tu computadora.
 
 2. Copia el proyecto:
 
-Copia la carpeta FormularioDeVotacion a la carpeta htdocs que se encuentra en la ruta de instalación de XAMPP. 
+Copia la carpeta FormularioDeVotacion-master a la carpeta htdocs que se encuentra en la ruta de instalación de XAMPP. 
 Por ejemplo, en Windows, de manera por defecto la carpeta htdocs se encuentra en C:\xampp\htdocs.
 
 3. Inicia XAMPP:
@@ -25,9 +25,9 @@ Inicia XAMPP y asegúrate de que los servicios de Apache y MySQL estén iniciado
 
 4. Importa la base de datos:
 
-En esta misma carpeta veras otra con nombre SQL en la cual hay un archivo llamado "votacion_db .sql" , asegúrate de importarla a tu instalación de MySQL. 
-Para hacerlo, abre phpMyAdmin desde el panel de control de XAMPP,esto puedes hacerlo dando click a la opcion "ADMIN". 
-selecciona la pestaña "Importar" y carga el archivo SQL que te indiqué al princio a la base de datos.
+En esta misma carpeta veras otra con nombre "SQL" en la cual hay un archivo llamado "votacion_db .sql" , asegúrate de importarla a tu instalación de MySQL. 
+Para hacerlo, abre phpMyAdmin desde el panel de control de XAMPP,dando click a la opcion "ADMIN". 
+crea una base de datos nueva llamada "votacion_db .sql" sin las comillas luego de eso seleccionala haciendo click y ahora selecciona la pestaña "Importar" y carga el archivo SQL que te indiqué al principio a la base de datos recien creada.
 
 5. Abre el proyecto en tu navegador web:
 
